@@ -1,7 +1,9 @@
 body{
     font-family: 'Courier New', Courier, monospace;
     background-image: url("../images/back.jpg");
-    background-size: 100;}
+    background-size: 100;
+    background-attachment: fixed}
+header{position: fixed;}
 p{
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
@@ -10,12 +12,11 @@ h1{
     font-size: 32pt;
     font-family: Gabriola, cursive;
     color: rgb(255, 255, 255);
-    background-color: rgb(55, 55, 55);
     margin-top: 3px;}
 header h2{font-family: Bahnschrift Light, cursive;}
 h3{font-family: Bahnschrift Light, cursive;}
 h6{text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; margin-top: 2pt;}
-div{
+div.main{
     margin-left: 30pt;
     margin-right: 30pt;
     margin-top: 10pt;
@@ -27,26 +28,59 @@ a:visited {color: aliceblue;}
     width: 1200px;
     height: 800px;
     position: absolute;
-    top: 0;
-/*
-right: 0;
-bottom: 0;
-left: 0;*/
     margin-left: 160pt;
     background: #b7b7b7;
+    top: 15px;
     padding: 5px;
     padding-right: 20px; 
     border: solid 3px #2b2422; 
     border-radius: 25px;
-    float: left;
 }
-
-table.sp_char td{
-    padding: 12px;
+div.sp_characters{ 
+    width: 1200px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: #b7b7b7;
+    margin-left: 160pt;
+    margin-top: 80pt;
+    padding: 5px;
+    padding-right: 20px; 
+    border: solid 3px #2b2422;
+    border-radius: 25px;
+}
+div.header{position: absolute;
+    top: 0;
+    width: 1200px;
+    height: 70px;
+    /*padding: 5px;*/
+    padding-right: 20px;
+    background: #2a2a2a;
+    margin-left: 160pt;
+    margin-top: 10pt;
+    border: solid 3px rgb(169, 169, 169);
+    border-radius: 25px;
+}
+a:link.normallink{color: rgb(91, 43, 154);}
+a:active.normallink{color: rgb(91, 43, 154);}
+a:visited.normallink{color: rgb(91, 43, 154);}
+table.sp_char td, table.sp_char-right td{
+    padding: 8px;
     border-top: black thin dotted;
     border-bottom: black thin dotted;
+    height: 111pt;
 }
-.sp_char{padding-left: 12pt;}
-.sp_pic{padding-right: 20px;}
+table.sp_char{
+    float: left;
+}
+.sp_char{padding-left: 12pt; width: 600px; margin-top: 3px;}
+table.sp_char-right{ 
+    width: 600px;
+    float: right;
+    margin-top: 2pt;
+}
+.sp_pic{padding-right: 10px;}
+.sp_pic-r{margin-left: 20pt;
+margin-right: 10pt;}
 dt{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
 dd{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
